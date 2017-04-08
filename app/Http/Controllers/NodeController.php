@@ -47,6 +47,7 @@ class NodeController extends Controller
     		'latitude' => $request->latitude,
     		'longitude' => $request->longitude,
     		'user_id' => $user->id,
+            'description' => $request->description
     	];
     	return $this->nodeService->insert($data);
     }

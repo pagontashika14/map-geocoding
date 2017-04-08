@@ -26,4 +26,4 @@ CREATE TRIGGER nodes_update BEFORE INSERT OR UPDATE
     ON nodes FOR EACH ROW EXECUTE PROCEDURE nodes_update_trigger();
 
 
-CREATE INDEX pgweb_idx ON pgweb USING GIN (to_tsvector('english', body));
+CREATE INDEX nodes_index ON nodes USING GIN (tsv);

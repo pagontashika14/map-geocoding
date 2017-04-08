@@ -17,6 +17,7 @@ class NodeService
         $node->city_id = $data['city_id'];
         $node->country_id = $data['country_id'];
         $node->user_id = $data['user_id'];
+        $node->description = $data['description'];
         $node->save();
         return $node;
     }

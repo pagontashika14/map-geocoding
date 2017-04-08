@@ -19,6 +19,7 @@ class CreateNodesTable extends Migration
             $table->double('longitude');
             $table->text('title');
             $table->string('street_number')->nullable();
+            $table->json('description')->nullable();
             $table->text('address')->nullable();
             $table->integer('city_id')->nullable();
             $table->integer('country_id')->nullable();
